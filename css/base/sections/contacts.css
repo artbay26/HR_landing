@@ -1,0 +1,104 @@
+/*------contacts_section-------*/
+.contacts {
+  padding: 8.375rem 0;
+  background-color: #EFEDFF;
+}
+.contacts__container {
+  gap: 1%;
+}
+@media all and (max-width: 768px) {
+  .contacts__container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.contacts__container .contacts__content {
+  flex: 1 0 50%;
+  align-self: center;
+}
+.contacts__container .contacts__content .contacts__title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.contacts__container .contacts__content .contacts__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+  color: #4F4F4F;
+  margin-bottom: 3rem;
+  width: 85%;
+}
+.contacts__container .contacts__content .info {
+  width: 85%;
+}
+.contacts__container .contacts__content .info__owner {
+  margin-bottom: 1.5rem;
+}
+.contacts__container .contacts__content .info__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contacts__container .contacts__content .info__box:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.contacts__container .contacts__content .info__box .info__value {
+  flex: 1 1 auto;
+}
+.contacts .form {
+  align-self: center;
+  width: 100%;
+}
+.contacts .form__box {
+  height: 29.4375rem;
+  background: #FFFFFF;
+  border: 2px solid #6248FF;
+  border-radius: 20px;
+  padding: 5rem;
+}
+@media all and (max-width: 768px) {
+  .contacts .form__box {
+    padding: 5rem 2.625rem;
+  }
+}
+@media all and (max-width: 320px) {
+  .contacts .form__box {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+}
+.contacts .form__box .form__item {
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid #E0E0E0;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.1666666667;
+  color: #828282;
+}
+.contacts .form__box .form__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+  height: 2.5rem;
+}
+.contacts .form__box .form__item:nth-child(3) {
+  height: 5.5625rem;
+}
+.contacts .form__box textarea {
+  resize: none;
+}
+.contacts .form__box .form__buttonBody {
+  margin-top: 2.5rem;
+  position: relative;
+}
+.contacts .form__box .button_small {
+  padding: 1.25rem 4rem;
+  position: absolute;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*# sourceMappingURL=contacts.css.map */

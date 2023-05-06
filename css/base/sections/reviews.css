@@ -1,0 +1,221 @@
+/*------reviews_section-------*/
+.reviews__container {
+  margin-top: 8.75rem;
+  gap: 6%;
+}
+@media all and (max-width: 768px) {
+  .reviews__container {
+    margin-top: 9.575rem;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    gap: 0;
+  }
+}
+@media all and (max-width: 768px) and (max-width: 320px) {
+  .reviews__container {
+    margin-top: 6.87rem;
+    margin-bottom: 5rem;
+    max-width: 23.5rem;
+  }
+}
+.reviews__container .reviews__content {
+  flex: 0 0 44%;
+  align-self: center;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__content {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+.reviews__container .reviews__content .reviews__title {
+  width: 100%;
+  margin-bottom: 2.44rem;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__content .reviews__title {
+    margin-bottom: 0.75rem;
+  }
+}
+@media all and (max-width: 320px) {
+  .reviews__container .reviews__content .reviews__title {
+    margin-bottom: -3rem;
+  }
+}
+.reviews__container .reviews__content .reviews__controls {
+  display: flex;
+  align-self: center;
+  gap: 1rem;
+  padding: 5px;
+  margin-bottom: 23.68px;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__content .reviews__controls {
+    position: relative;
+    top: 235px;
+    z-index: 6;
+  }
+}
+@media all and (max-width: 320px) {
+  .reviews__container .reviews__content .reviews__controls {
+    top: 520px;
+    z-index: 6;
+  }
+}
+.reviews__container .reviews__content .reviews__controls .reviews__arrow {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: white;
+  font-size: 0.6875rem;
+  cursor: pointer;
+}
+.reviews__container .reviews__content .reviews__controls .reviews__arrow:hover, .reviews__container .reviews__content .reviews__controls .reviews__arrow:active {
+  border: 2px solid #6248FF;
+  transition: 500ms;
+}
+.reviews__container .reviews__content .reviews__controls .reviews__arrow_right {
+  transform: rotate(180deg);
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__content .reviews__controls .reviews__arrow_right {
+    position: absolute;
+    right: 2%;
+  }
+}
+@media all and (max-width: 320px) {
+  .reviews__container .reviews__content .reviews__controls .reviews__arrow_right {
+    position: absolute;
+  }
+}
+.reviews__container .reviews__images {
+  position: relative;
+  flex: 0 0 55%;
+  height: 300px;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images {
+    width: 100%;
+  }
+}
+.reviews__container .reviews__images .quotes {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+.reviews__container .reviews__images .quotes__body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0 5px 0 55px;
+  margin-top: 105px;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body {
+    top: 0rem;
+    padding: 0 3rem 0 3rem;
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 320px) {
+  .reviews__container .reviews__images .quotes__body {
+    top: 0rem;
+    padding: 0 2rem 0 2rem;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__user {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__user {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.75rem;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__user .quotes__userImg img {
+  width: 4.56rem;
+  height: 4.56rem;
+  border-radius: 50%;
+}
+.reviews__container .reviews__images .quotes__body .quotes__user .quotes__userId {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__user .quotes__userId {
+    align-items: center;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__user .quotes__userIdName {
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+}
+.reviews__container .reviews__images .quotes__body .quotes__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__text {
+    width: 100%;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__textBox {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2083333333;
+  color: #333333;
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__textBox {
+    text-align: center;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__textBox::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 1.6875rem;
+  background-image: url(../../img/quotes.png);
+  background-size: cover;
+  left: -3rem;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__textBox::before {
+    top: -3.5rem;
+    left: 48%;
+    margin: 0.8rem 0 2rem 0;
+  }
+}
+@media all and (max-width: 320px) {
+  .reviews__container .reviews__images .quotes__body .quotes__textBox::before {
+    left: 43%;
+  }
+}
+.reviews__container .reviews__images .quotes__body .quotes__textNumber {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125;
+  color: #6248FF;
+}
+@media all and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__textNumber {
+    text-align: center;
+  }
+}
+@media all and (max-width: 768px) and (max-width: 768px) {
+  .reviews__container .reviews__images .quotes__body .quotes__textNumber {
+    margin-top: 55px;
+  }
+}
+
+/*# sourceMappingURL=reviews.css.map */

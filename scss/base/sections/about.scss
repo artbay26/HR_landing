@@ -1,0 +1,74 @@
+ /*------about_section-------*/
+ 
+ .about {
+     background-color: #EFEDFF;
+     &__container {
+         gap: calc(133/1200*100%);
+         .about__content {
+             flex: 1 0 50%;
+             align-self: center;
+             .about__title {
+                 margin-bottom: 1.25rem;
+                 width: 90%;
+                 &_main {
+                     font-size: 4rem;
+                     line-height: calc(72/64);
+                 }
+             }
+             .about__text {
+                 font-family: 'Montserrat';
+                 font-weight: 400;
+                 font-size: 1.125rem;
+                 line-height: calc(30/18);
+                 color: #4F4F4F;
+                 margin-bottom: 3rem;
+                 width: 85%;
+             }
+         }
+         .about__image {
+             padding: 6.25rem 3.75rem 6.25rem 0px;
+             img {
+                 max-width: 100%;
+             }
+         }
+     }
+     @media all and (max-width: 768px) {
+         .about__container {
+             flex-direction: column;
+             text-align: center;
+             flex: 0 0 auto;
+             width: 90%;
+             .about__content {
+                 .about__title {
+                     text-align: center;
+                     padding-top: 2.5rem;
+                     margin: 0 auto 1.25rem auto;
+                     @media all and (max-width: 320px) {
+                         font-size: 2.5rem;
+                         line-height: calc(44/40);
+                     }
+                 }
+                 .about__text {
+                     text-align: center;
+                     margin: 0 auto 3rem auto;
+                 }
+             }
+             .about__image {
+                 padding: 3.25rem 0 1.5rem 0;
+                 width: 68%;
+                 margin: 0 auto;
+                 @media all and (max-width: 320px) {
+                     width: 100%;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .button_big {
+     padding: 1.25rem 2.125rem;
+     margin-bottom: 1rem;
+     @media all and (max-width: 320px) {
+         padding: 1.25rem 5.625rem;
+     }
+ }

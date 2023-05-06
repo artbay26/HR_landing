@@ -1,0 +1,138 @@
+            $hghSolidRow: 233px; //hight of solid "steps__row" box
+            $wdthSolidColumn: 483px; //width of solid "steps__column" box
+            $wdthSolidDashed: 374px; //width of solid "steps__columnDashed" box
+            $wdthStepsBox: 1092px; //width of "steps" box
+            /*------start_section-------*/
+            
+            .start__container {
+                flex-direction: column;
+                row-gap: 3.75rem;
+                .start__title {
+                    margin-top: 8.75rem;
+                    @media all and (max-width: 768px) {
+                        margin-top: 7.5rem;
+                    }
+                    @media all and (max-width: 500px) {
+                        margin-top: 5rem;
+                    }
+                }
+                .steps {
+                    max-width: 92%;
+                    height: 48.75rem;
+                    position: relative;
+                    @media all and (max-width: 500px) {
+                        max-width: 100%;
+                        height: 63rem;
+                    }
+                    &__column {
+                        max-width: calc($wdthSolidColumn/$wdthStepsBox*100%);
+                        position: absolute;
+                        @media all and (max-width: 500px) {
+                            max-width: 100%;
+                        }
+                        .steps__row {
+                            display: flex;
+                            flex-direction: column;
+                            height: $hghSolidRow;
+                            border: 2px solid #6248FF;
+                            border-radius: 30px;
+                            padding: 2rem;
+                            &:not(:last-child) {
+                                margin-bottom: 8.3125rem;
+                            }
+                            @media all and (max-width: 500px) {
+                                &:not(:last-child) {
+                                    margin-bottom: calc($hghSolidRow + 3rem);
+                                }
+                            }
+                            .steps__item {
+                                &:nth-child(1) {
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: calc(18/15);
+                                    color: #6248FF;
+                                    margin-bottom: 8px;
+                                }
+                                &:nth-child(2) {
+                                    font-weight: 600;
+                                    font-size: 24px;
+                                    line-height: calc(29/24);
+                                    color: #333333;
+                                    margin-bottom: 1.5rem;
+                                    @media all and (max-width: 500px) {
+                                        font-weight: 500;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    @extend %monts !optional;
+                                }
+                            }
+                        }
+                        &:nth-child(1),
+                        &:nth-child(4) {
+                            .steps__row {
+                                background: white;
+                                position: relative;
+                                z-index: 3;
+                            }
+                        }
+                        &:nth-child(4) {
+                            top: 182px;
+                            right: 0;
+                            @media all and (max-width: 500px) {
+                                top: calc($hghSolidRow + 24px);
+                            }
+                        }
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            width: $wdthSolidDashed;
+                            top: 112px;
+                            right: 235px;
+                            .steps__row {
+                                height: 70px;
+                                margin-bottom: 112px;
+                                border: rgba(98, 72, 255, 0);
+                            }
+                            @media all and (max-width: 768px) {
+                                &:nth-child(2) {
+                                    right: 164px;
+                                }
+                            }
+                            @media all and (max-width: 500px) {
+                                display: none;
+                            }
+                        }
+                        &:nth-child(2) {
+                            .steps__row {
+                                &:nth-child(odd) {
+                                    border-top: 2px dashed #6248FF;
+                                    border-right: 2px dashed #6248FF;
+                                    border-radius: 0 30px 0 0;
+                                }
+                                &:nth-child(2) {
+                                    border: 2px dashed rgba(98, 72, 255, 0);
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            left: 235px;
+                            @media all and (max-width: 768px) {
+                                left: 164px;
+                            }
+                            .steps__row {
+                                &:nth-child(1) {
+                                    border: 2px dashed rgba(98, 72, 255, 0);
+                                }
+                                &:nth-child(2) {
+                                    border-top: 2px dashed #6248FF;
+                                    border-left: 2px dashed #6248FF;
+                                    border-radius: 30px 0 0 0;
+                                }
+                                &:nth-child(3) {
+                                    border: 2px dashed rgba(98, 72, 255, 0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }

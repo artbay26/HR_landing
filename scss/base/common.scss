@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../../fonts/MuseoSansCyrl-500.eot');
+    src: local('☺'), url('../../fonts/MuseoSansCyrl-500.woff') format('woff'), url('../../fonts/MuseoSansCyrl-500.ttf') format('truetype'), url('../../fonts/MuseoSansCyrl-500.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../../fonts/MuseoSansCyrl_700.eot');
+    src: local('☺'), url('../../fonts/MuseoSansCyrl_700.woff') format('woff'), url('../../fonts/MuseoSansCyrl_700.ttf') format('truetype'), url('../../fonts/MuseoSansCyrl_700.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../../fonts/MuseoSansCyrl_900.eot');
+    src: local('☺'), url('../../fonts/MuseoSansCyrl_900.woff') format('woff'), url('../../fonts/MuseoSansCyrl_900.ttf') format('truetype'), url('../../fonts/MuseoSansCyrl_900.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Regular.eot');
+    src: local('☺'), url('../../fonts/Montserrat-Regular.woff') format('woff'), url('../../fonts/Montserrat-Regular.ttf') format('truetype'), url('../../fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icon_fonts/arrow_font/icomoon.eot');
+    src: local('☺'), url('../../fonts/icon_fonts/arrow_font/icomoon.woff') format('woff'), url('../../fonts/icon_fonts/arrow_font/icomoon.ttf') format('truetype'), url('../../fonts/icon_fonts/arrow_font/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 0.9375rem;
+    color: black;
+    font-family: 'MuseoSansCyrl';
+    font-weight: 700;
+    .wrapper {
+        min-height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .page {
+            flex: 1 1 auto;
+            padding-top: 5rem;
+            .page__about {
+                background-color: #EFEDFF;
+            }
+        }
+    }
+}
+
+
+/*While mobile-menu is opened overflow is hidden  */
+
+.body_lock {
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    padding: 0.4rem 1rem;
+    @media all and (max-width: 1200px) {
+        max-width: 63.0625rem;
+    }
+    @media all and (max-width: 768px) {
+        max-width: 43rem;
+    }
+    @media all and (max-width: 320px) {
+        max-width: 17.5rem;
+    }
+}
+
+[class*="__title"] {
+    font-weight: 600;
+    font-size: 3.5rem; // 3.5 = 56px(by layout)/16px(by default)
+    line-height: calc(66/56); //  66px(line-height by layout)/56px(font-size by layout)
+    color: #333333;
+    .start__titleBackground {
+        background-color: #EFEDFF;
+    }
+    @media all and (max-width: 768px) {
+        font-weight: 500;
+    }
+    @media all and (max-width: 500px) {
+        font-size: 2.5rem; // 2.5 = 40px(by layout)/16px(by default)
+        line-height: calc(44/40); //  44px(line-height by layout)/40px(font-size by layout)
+    }
+}
+
+// icon-font-family: 'icomoon' - set
+%ic {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=" icon-"] {
+    &:before {
+        @extend %ic;
+        display: block;
+    }
+}
+
+.icon-arrow-slider:before {
+    content: "\e900";
+}
+
+//font-family: 'Montserrat' - set
+%monts {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: calc(27/16);
+    color: #4F4F4F;
+}
+
+[class*="__link"] {
+    cursor: pointer;
+    &:hover {
+        color: #7181FC;
+        transition: 500ms;
+    }
+}

@@ -1,0 +1,83 @@
+/*------about_section-------*/
+.about {
+  background-color: #EFEDFF;
+}
+.about__container {
+  gap: 11.0833333333%;
+}
+.about__container .about__content {
+  flex: 1 0 50%;
+  align-self: center;
+}
+.about__container .about__content .about__title {
+  margin-bottom: 1.25rem;
+  width: 90%;
+}
+.about__container .about__content .about__title_main {
+  font-size: 4rem;
+  line-height: 1.125;
+}
+.about__container .about__content .about__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+  color: #4F4F4F;
+  margin-bottom: 3rem;
+  width: 85%;
+}
+.about__container .about__image {
+  padding: 6.25rem 3.75rem 6.25rem 0px;
+}
+.about__container .about__image img {
+  max-width: 100%;
+}
+@media all and (max-width: 768px) {
+  .about .about__container {
+    flex-direction: column;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 90%;
+  }
+  .about .about__container .about__content .about__title {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 0 auto 1.25rem auto;
+  }
+}
+@media all and (max-width: 768px) and (max-width: 320px) {
+  .about .about__container .about__content .about__title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+}
+@media all and (max-width: 768px) {
+  .about .about__container .about__content .about__text {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+  }
+}
+@media all and (max-width: 768px) {
+  .about .about__container .about__image {
+    padding: 3.25rem 0 1.5rem 0;
+    width: 68%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 768px) and (max-width: 320px) {
+  .about .about__container .about__image {
+    width: 100%;
+  }
+}
+
+.button_big {
+  padding: 1.25rem 2.125rem;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 320px) {
+  .button_big {
+    padding: 1.25rem 5.625rem;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
